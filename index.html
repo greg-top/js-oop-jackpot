@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jackpot game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>Jackpot</h1>
+
+      <section class="game">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+      </section>
+
+      <section class="play">
+        <input type="number" placeholder="Bid" id="bid" min="1" />
+        <button id="start">Draw!</button>
+      </section>
+
+      <section class="panel">
+        Cash balance: <span class="wallet"></span>$
+      </section>
+
+      <section class="score">
+        <span class="result"></span><br />
+        Short stats <br />
+        <span class="number"></span> games, <span class="win"></span> won,
+        <span class="loss"></span> losses
+      </section>
+    </div>
+    <script type="module" src="src/js-modules/Wallet.js"></script>
+    <script type="module" src="src/js-modules/Statistics.js"></script>
+    <script type="module" src="src/js-modules/Draw.js"></script>
+    <script type="module" src="src/js-modules/Result.js"></script>
+    <script type="module" src="src/js-modules/Game.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
